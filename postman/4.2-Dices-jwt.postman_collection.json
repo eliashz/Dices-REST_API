@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "b0ac1177-63a3-4fd4-9b70-c075e7a929b4",
+		"name": "4.2-Dices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/ players",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Elías\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/players/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"players",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ players/:id",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4NTU3fQ._F1uFG6MtVJSl5dfOEpF2BfSH-mhjQmjOESshkHe73A",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ehz\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/players/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"players",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ players",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4NTU3fQ._F1uFG6MtVJSl5dfOEpF2BfSH-mhjQmjOESshkHe73A",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"players"
+					],
+					"query": [
+						{
+							"key": "access-token",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ games:id",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/games/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"games",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ games/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/games/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"games",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ games/:id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/games/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"games",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ rankings",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/rankings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rankings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " / rankings/loser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/rankings/loser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rankings",
+						"loser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": " / rankings/winner",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjaGVjayI6dHJ1ZSwiaWF0IjoxNjU3NzA4ODk1fQ.SAdvzLAdRiIGfeNXuyRLvjJGVkO-NMVTiGpD0C66Y2k",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/rankings/winner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rankings",
+						"winner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"ehz\",\r\n    \"password\": \"1234\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "conte",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
