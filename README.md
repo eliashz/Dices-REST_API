@@ -5,7 +5,7 @@ Para la persistencia de los datos se ha usado MySQL con Sequelize y Mongo DB con
 ## Instrucciones:
 1. Para la ejecución del programa se tiene que haber instalado previamente [Node.js](https://nodejs.org/es/).
 2. Se ha incluido un archivo **.config.env** que se tiene que renombrar como **.env** y rellenar con los datos correctos. En la primera línea, DATABASE, escribir **mysql** o **mongodb** dependiendo de que tipo de base de datos se desea usar. 
-3. Depués de descargar el repositorio de [GitHub](https://github.com/eliashz/nodeInitialDemo/tree/api-4.2) hay que hacer `npm i` desde de la raíz y desde la consola para la instalación de las dependencias: 
+3. Depués de descargar el [repositorio de GitHub](https://github.com/eliashz/Dices-REST_API) hay que hacer `npm i` desde de la raíz y desde la consola para la instalación de las dependencias: 
     - [express](https://www.npmjs.com/package/express)
     - [Sequelize](https://www.npmjs.com/package/sequelize)
     - [mysql2](https://www.npmjs.com/package/mysql2)
